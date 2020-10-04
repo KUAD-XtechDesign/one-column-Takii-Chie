@@ -4,12 +4,12 @@
 body{
   line-height: 2;
   font-family: 'Noto Sans JP', sans-serif;
-
+  background-image : url(./images/Sakuma.png);
 }
 
 .wrapper{
     max-width: 1000px;
-    background-color: #fff3e5;
+    background-color: #3A281E;
     margin: 0 auto;
    }
    
@@ -20,9 +20,13 @@ header {
     text-align: center;
   }
 
+iframe{
+  margin: auto;
+  text-align: center;
+}
+
   .img_side{
     z-index: 10;
-    background: pink;
     width: 100px;
     height: 100px;
     position:fixed; 
@@ -37,9 +41,17 @@ header .headline{
   }
 
 .nav-list {
+    font-family: Courier;
     text-align: center;
     padding: 10px 0;
     margin: 0 auto;
+    font-size: 130%
+  }
+
+  .sample05_title{
+    font-family: ヒラギノ丸ゴ ProN;
+    font-size: x-large;
+    margin: auto;
   }
 
 .nav-list-item {
@@ -94,7 +106,7 @@ img{
   content: "";
   display: block;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.233);
   width: 100%;
   height: 100%;
   top: 0;
@@ -108,19 +120,26 @@ img{
 
 /* 横並び追加 */
 .txt_img{
+  font-family: ヒラギノ丸ゴ ProN;
   display: flex;
   max-width: 900px;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 0vh;
 }
 
 .img{
-  width: 20%;
+  width: 50%;
 }
 
 .txt{
+  font-family: ヒラギノ丸ゴ ProN;
   width: 80%;
   padding: 10px;
+}
+
+.txt_top{
+  font-family: ヒラギノ丸ゴ ProN;
+  font-size: x-large;
 }
 
 #img01{
