@@ -13,13 +13,15 @@ $(function(){
       $(this).parent(".content").slideUp("slow");
     })
   
-    $(window).scroll(function () {
-     var now = $(window).scrollTop();
-     if (now > 200) {
-       $('.pagetop').fadeIn("slow");
-     } else {
-       $('.pagetop').fadeOut('slow');
-     }
+    document.getElementById( "btn-backtotop" ).addEventListener('click', function(e) {
+      anime.remove("html, body");
+      anime({
+        targets: "html, body",
+        scrollTop: 0,
+        dulation: 600,
+        easing: 'easeOutCubic',
+      });
+      return false;
     });
 
   });
