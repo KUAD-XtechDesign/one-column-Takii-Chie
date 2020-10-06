@@ -13,15 +13,11 @@ $(function(){
       $(this).parent(".content").slideUp("slow");
     })
   
-    document.getElementById( "btn-backtotop" ).addEventListener('click', function(e) {
-      anime.remove("html, body");
-      anime({
-        targets: "html, body",
-        scrollTop: 0,
-        dulation: 600,
-        easing: 'easeOutCubic',
-      });
+    
+    $('#totop').on('click',function(){
+      $("html, body").animate({scrollTop:0}, 500);
       return false;
     });
+    
 
   });
